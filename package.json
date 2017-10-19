@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-duivvv",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "personal eslint config",
   "main": "index.js",
   "repository": {
@@ -10,11 +10,11 @@
   "author": "Geoffrey Dhuyvetters <geoffrey.dhuyvetters@gmail.be>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.17.0"
+    "eslint": "^4.9.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.0.0",
-    "eslint-plugin-babel": "^3.3.0",
-    "eslint-plugin-react": "^6.10.0"
+    "babel-eslint": "^8.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
