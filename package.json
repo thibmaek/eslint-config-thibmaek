@@ -1,13 +1,13 @@
 {
-  "name": "eslint-config-devine",
+  "name": "eslint-config-duivvv",
   "version": "1.7.1",
-  "description": "the one and only devine.be eslint config",
+  "description": "personal eslint config",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/devinehowest/eslint-config-devine.git",
+    "url": "https://github.com/duivvv/eslint-config-duivvv.git",
     "type": "git"
   },
-  "author": "Geoffrey Dhuyvetters <geoffrey.dhuyvetters@howest.be>",
+  "author": "Geoffrey Dhuyvetters <geoffrey.dhuyvetters@gmail.be>",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.17.0"
