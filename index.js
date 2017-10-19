@@ -1,6 +1,7 @@
 module.exports = {
 
   extends: [
+    require.resolve(`./import`),
     `eslint:recommended`,
   ],
 
@@ -20,36 +21,36 @@ module.exports = {
 
   rules: {
 
-    indent: [`error`, 2],
-    quotes: [`error`, `backtick`],
-    semi: [`error`, `always`],
-    "prefer-const": `error`,
-    "space-infix-ops": `error`,
-    "quote-props": [`error`, `as-needed`],
+    indent: [2, 2],
+    quotes: [2, `backtick`],
+    semi: [2, `always`],
+    "prefer-const": 2,
+    "space-infix-ops": 2,
+    "quote-props": [2, `as-needed`],
     "no-console": `off`,
-    "prefer-template": `error`,
-    "no-array-constructor": `error`,
-    "no-new-object": `error`,
-    "no-unused-vars": [`error`, {
+    "prefer-template": 2,
+    "no-array-constructor": 2,
+    "no-new-object": 2,
+    "no-unused-vars": [2, {
       ignoreRestSiblings: true,
     }],
-    "no-var": `error`,
-    eqeqeq: [`error`, `smart`],
-    "jsx-quotes": [`error`, `prefer-single`],
-    camelcase: `error`,
-    "keyword-spacing": [`error`, {before: true, after: true}],
-    "space-in-parens": [`error`, `never`],
-    "space-before-blocks": `error`,
-    "space-unary-ops": [`error`, {words: true, nonwords: true, overrides: {"!": false, ".": false}}],
-    "semi-spacing": [`error`, {before: false, after: false}],
-    "arrow-spacing": `error`,
+    "no-var": 2,
+    eqeqeq: [2, `smart`],
+    "jsx-quotes": [2, `prefer-single`],
+    camelcase: 2,
+    "keyword-spacing": [2, {before: true, after: true}],
+    "space-in-parens": [2, `never`],
+    "space-before-blocks": 2,
+    "space-unary-ops": [2, {words: true, nonwords: true, overrides: {"!": false, ".": false}}],
+    "semi-spacing": [2, {before: false, after: false}],
+    "arrow-spacing": 2,
     "object-curly-spacing": [`off`, `never`],
-    "arrow-parens": [`error`, `as-needed`],
-    "key-spacing": `error`,
-    "comma-spacing": [`error`, { before: false, after: true }],
-    "comma-style": [`error`, `last`],
+    "arrow-parens": [2, `as-needed`],
+    "key-spacing": 2,
+    "comma-spacing": [2, { before: false, after: true }],
+    "comma-style": [2, `last`],
 
-    "babel/object-curly-spacing": [`error`, `never`],
+    "babel/object-curly-spacing": [2, `never`],
 
   },
 
