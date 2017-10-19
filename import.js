@@ -1,7 +1,7 @@
 module.exports = {
 
   extends: [
-    `import:recommended`,
+    `plugin:import/recommended`,
   ],
   
   plugins: [
