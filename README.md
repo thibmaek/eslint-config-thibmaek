@@ -1,4 +1,4 @@
-# eslint-config-duivvv
+# eslint-config-thibmaek
 
 personal eslint config
 
@@ -7,20 +7,20 @@ personal eslint config
 Install this package, and save it as a devDependency:
 
 ```
-yarn add eslint-config-duivvv --dev
+yarn add eslint-config-thibmaek --dev
 ```
 
 or via npm if you're old school
 
 ```
-npm i -D eslint-config-duivvv
+npm i -D eslint-config-thibmaek
 ```
 
 Then have your project's `.eslintrc` file extend the ruleset.
 
 ```json
 {
-  "extends": "duivvv"
+  "extends": "thibmaek"
 }
 ```
 
@@ -28,7 +28,7 @@ If you're using React in your project:
 
 ```json
 {
-  "extends": "duivvv/react"
+  "extends": "thibmaek/react"
 }
 ```
 
