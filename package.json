@@ -1,13 +1,13 @@
 {
-  "name": "eslint-config-duivvv",
-  "version": "1.10.0",
-  "description": "personal eslint config",
+  "name": "eslint-config-thibmaek",
+  "version": "1.0.0",
+  "description": "Personal ESLint config",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/duivvv/eslint-config-duivvv.git",
+    "url": "https://github.com/thibmaek/eslint-config-thibmaek.git",
     "type": "git"
   },
-  "author": "Geoffrey Dhuyvetters <geoffrey.dhuyvetters@gmail.be>",
+  "author": "Thibault Maekelbergh <thibault.maekelbergh@icloud.com>",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.9.0"
