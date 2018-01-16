@@ -1,5 +1,13 @@
 module.exports = {
 
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+    mocha: true,
+    node: true,
+  },
+
   extends: [
     require.resolve(`./import`),
     `eslint:recommended`,
@@ -7,51 +15,44 @@ module.exports = {
 
   parser: `babel-eslint`,
 
-  env: {
-    browser: true,
-    node: true,
-    jest: true,
-    mocha: true,
-    es6: true,
-  },
-
-  plugins: [
-    `babel`,
-  ],
+  plugins: [ `babel` ],
 
   rules: {
+    // Warnings
+    "no-console": `warn`,
+    "sort-keys": `warn`,
 
-    indent: [2, 2],
-    quotes: [2, `backtick`],
-    semi: [2, `always`],
-    "prefer-const": 2,
-    "space-infix-ops": 2,
-    "quote-props": [2, `as-needed`],
-    "no-console": `off`,
-    "prefer-template": 2,
-    "no-array-constructor": 2,
-    "no-new-object": 2,
-    "no-unused-vars": [2, {
-      ignoreRestSiblings: true,
+    // Errors
+    "arrow-parens": [`error`, `as-needed`],
+    "arrow-spacing": `error`,
+    camelcase: `error`,
+    "comma-dangle": [`error`, `always-multiline`],
+    "comma-spacing": [`error`, { after: true, before: false }],
+    "comma-style": [`error`, `last`],
+    eqeqeq: [`error`, `smart`],
+    indent: [`error`, 2],
+    "jsx-quotes": [`error`, `prefer-single`],
+    "key-spacing": `error`,
+    "keyword-spacing": [`error`, { after: true, before: true }],
+    "no-array-constructor": `error`,
+    "no-new-object": `error`,
+    "no-unused-vars": [`error`, { ignoreRestSiblings: true }],
+    "no-var": `error`,
+    "object-curly-spacing": [`error`, `always`],
+    "prefer-const": `error`,
+    "prefer-template": `error`,
+    "quote-props": [`error`, `as-needed`],
+    quotes: [`error`, `backtick`],
+    semi: [`error`, `always`],
+    "semi-spacing": [`error`, { after: false, before: false }],
+    "space-before-blocks": `error`,
+    "space-in-parens": [`error`, `never`],
+    "space-infix-ops": `error`,
+    "space-unary-ops": [`error`, {
+      nonwords: true,
+      overrides: { "!": false, ".": false },
+      words: true,
     }],
-    "no-var": 2,
-    eqeqeq: [2, `smart`],
-    "jsx-quotes": [2, `prefer-single`],
-    camelcase: 2,
-    "keyword-spacing": [2, {before: true, after: true}],
-    "space-in-parens": [2, `never`],
-    "space-before-blocks": 2,
-    "space-unary-ops": [2, {words: true, nonwords: true, overrides: {"!": false, ".": false}}],
-    "semi-spacing": [2, {before: false, after: false}],
-    "arrow-spacing": 2,
-    "object-curly-spacing": [`off`, `never`],
-    "arrow-parens": [2, `as-needed`],
-    "key-spacing": 2,
-    "comma-spacing": [2, { before: false, after: true }],
-    "comma-style": [2, `last`],
-
-    "babel/object-curly-spacing": [2, `never`],
-
   },
 
 };
