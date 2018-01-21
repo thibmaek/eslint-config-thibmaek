@@ -24,7 +24,12 @@ module.exports = {
     "react/jsx-handler-names": `error`,
     "react/jsx-pascal-case": `error`,
     "react/jsx-sort-props": `warn`,
-    "react/jsx-space-before-closing": [`error`, `always`],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "always",
+      }
+    ],
     "react/jsx-wrap-multilines": `error`,
     "react/no-array-index-key": `error`,
     "react/no-did-mount-set-state": `error`,
